@@ -148,7 +148,7 @@ export const getServerSideProps: GetServerSideProps = async context => {
   }
 
   if (session) {
-    const hostname = process.env.NEXTAUTH_URL || 'http://localhost:3000'
+    const hostname = process.env.NEXTAUTH_URL || 'http://localhost:3001'
     const options = { headers: { cookie: context.req.headers.cookie } }
     const res = await fetch(`${hostname}/api/data`, options)
     const json = await res.json()
