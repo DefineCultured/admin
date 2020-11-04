@@ -1,0 +1,19 @@
+.label {
+  @apply block mb-2 text-xs font-bold tracking-wide text-gray-300 uppercase;
+}
+
+.input {
+  @apply block w-full px-4 py-3 mb-3 leading-tight rounded appearance-none text-vn-gray-yellow bg-vn-black-mid;
+}
+
+.input:focus {
+  @apply outline-none bg-vn-black-one;
+}
+
+.textarea {
+  @apply block w-full h-48 px-4 py-3 mb-3 leading-tight rounded appearance-none resize-none text-vn-gray-yellow bg-vn-black-mid;
+}
+
+.textarea:focus {
+  @apply outline-none bg-vn-black-one;
+}

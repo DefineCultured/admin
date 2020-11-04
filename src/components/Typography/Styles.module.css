@@ -1,0 +1,7 @@
+.sectionTitle {
+  @apply mb-4 text-lg font-semibold text-gray-600;
+}
+
+.pageTitle {
+  @apply my-6 text-2xl font-semibold text-gray-700;
+}

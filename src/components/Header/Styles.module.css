@@ -1,0 +1,31 @@
+.header {
+  @apply flex items-center justify-center w-full border-none;
+  min-height: 100px;
+}
+
+.user_userText {
+  @apply ml-2 text-base font-medium leading-6 select-none;
+}
+
+.user_userText:focus {
+  @apply outline-none;
+}
+
+.navLink {
+  @apply flex items-center justify-center px-4 py-2 mb-2 rounded-lg;
+}
+.navLink:hover {
+  @apply text-gray-200 bg-vn-black-one;
+}
+.navLink:focus {
+  @apply text-gray-200 outline-none bg-vn-black-one;
+}
+
+@screen md {
+  .navLink {
+    @apply mb-0 mr-4;
+  }
+  .header {
+    @apply border-b border-solid border-vn-black-mid;
+  }
+}

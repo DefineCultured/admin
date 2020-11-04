@@ -1,0 +1,29 @@
+.hero {
+  @apply h-full px-4 mx-auto;
+}
+
+.loginWrapper {
+  @apply flex items-center content-center justify-center h-full;
+}
+
+.login {
+  @apply relative flex flex-col w-full min-w-0 break-words border-0 rounded-lg shadow bg-vn-white;
+}
+
+.singIn_header_text {
+  @apply mt-6 mb-3 text-sm font-semibold text-center text-vn-black-one;
+}
+
+.social_signIn_button {
+  @apply inline-flex items-center justify-center w-32 px-4 py-2 mb-2 text-xs font-bold text-gray-800 uppercase bg-white rounded shadow outline-none cursor-pointer select-none h-11;
+  transition: all 0.15s ease 0s;
+}
+.social_signIn_button:hover {
+  @apply shadow-md;
+}
+.social_signIn_button:active {
+  @apply bg-gray-100;
+}
+.social_signIn_button:focus {
+  @apply outline-none;
+}
