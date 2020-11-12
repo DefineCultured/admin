@@ -4,7 +4,7 @@
   "main": "dist/src/index.js",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start -p 3001"
   },
@@ -19,8 +19,7 @@
     "node-cache": "^5.1.2",
     "pg": "^8.4.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-toastify": "^6.0.9"
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "@prisma/cli": "^2.10.1",

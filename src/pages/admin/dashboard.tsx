@@ -16,8 +16,6 @@ import {
   PeopleIcon
 } from '../../icons'
 
-import { toast } from 'react-toastify'
-
 // import styles from '../styles/Contact.module.css'
 
 const AdminDashboard = ({ session, content }) => {
@@ -31,8 +29,6 @@ const AdminDashboard = ({ session, content }) => {
   const onPageChange = (page: any) => {
     setPage(page)
   }
-
-  const exportData = () => toast('Some day this might work.')
 
   useEffect(() => {
     setData(contacts.slice((page - 1) * resultsPerPage, page * resultsPerPage))
@@ -123,7 +119,7 @@ const AdminDashboard = ({ session, content }) => {
         </TableContainer>
         <div className='flex justify-end'>
           <div className='w-full my-4 md:w-1/2 lg:w-1/4'>
-            <Button variant='blue' glow onClick={() => exportData()}>
+            <Button variant='blue' glow>
               Export
             </Button>
           </div>

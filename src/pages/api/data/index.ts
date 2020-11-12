@@ -30,7 +30,7 @@ export default async (req: NextApiRequest, res: NextApiResponse<SessionType>) =>
       return res.status(200).json({
         success: true,
         data: {
-          contacts
+          contacts: contacts.reverse()
         }
       })
     } catch (err) {
